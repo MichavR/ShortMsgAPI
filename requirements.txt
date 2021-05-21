@@ -18,3 +18,4 @@ setuptools==56.2.0
 sqlparse==0.4.1
 typing-extensions==3.10.0.0
 urllib3==1.26.4
+dj-config-url~=0.1.1

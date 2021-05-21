@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 import ShortMsg.apps
@@ -80,17 +81,22 @@ WSGI_APPLICATION = 'DaftcodeRemoteTask.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'short_msg_db',
-        'HOST': 'localhost',
-        'PASSWORD': '#P4ssw0rd',
-        'USER': 'postgres',
-        'PORT': 5432
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'short_msg_db',
+#         'HOST': 'localhost',
+#         'PASSWORD': '#P4ssw0rd',
+#         'USER': 'postgres',
+#         'PORT': 5432
+#     }
+# }
 
+DATABASES = {'default': {}}
+db_from_env = dj_database_url.config()
+DATABASES['default'].update(db_from_env)
+
+PROJECT_DIR = os.path.dirname(__file__)
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
