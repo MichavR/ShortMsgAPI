@@ -83,17 +83,6 @@ WSGI_APPLICATION = 'DaftcodeRemoteTask.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'short_msg_db',
-#         'HOST': 'localhost',
-#         'PASSWORD': '#P4ssw0rd',
-#         'USER': 'postgres',
-#         'PORT': 5432
-#     }
-# }
-
 DATABASES = {'default': {}}
 db_from_env = dj_database_url.config()
 DATABASES['default'].update(db_from_env)
