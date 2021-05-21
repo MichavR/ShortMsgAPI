@@ -37,21 +37,21 @@ Message object contains:
   will be provided automatically; "text" value must contain at least 1 character, otherwise it will not be saved
   
 - Message Details
-  url: https://short-msg-api.herokuapp.com/view_msg/<id>
+  url: https://short-msg-api.herokuapp.com/view_msg/{id}
   request: GET
   no authentication needed
   allows to view single message details as its text content, datetime of creation, author and views count. Id (int) of 
   demanded message must be provided in url. Every request increases views count by 1 for particular message
   
 - Edit Message:
-  url: https://short-msg-api.herokuapp.com/edit_msg/<id>
+  url: https://short-msg-api.herokuapp.com/edit_msg/{id}
   request: PUT
   authentication needed
   allows to edit particular message - id (int) of message must be provided in url ; edit resets datetime to current and 
   views counter to 0
   
 - Delete Message:
-  url: https://short-msg-api.herokuapp.com/delete_msg/<id>
+  url: https://short-msg-api.herokuapp.com/delete_msg/{id}
   request: DELETE
   authentication needed
   allows to delete single message with id (int) provided in url
