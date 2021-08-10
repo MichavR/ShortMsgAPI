@@ -13,7 +13,7 @@
    * [Delete message](#delete-message)
 
 <a name="overview"></a>
-## Overview: 
+## Overview 
 Short Message API app is a backend REST application written in Python (Django & Django REST frameworks). It allows user to store and share short messages/memos (maximum of 160 characters).
 
 Message object contains: 
@@ -75,7 +75,7 @@ For testing purposes use these credentials:\
 ## Endpoints
 
 <a name="authentication"></a>
-### Authentication
+### Authentication:
    Authentication is required for creating, editing and deleting messages.
    
    Application uses token authentication method. 
@@ -168,7 +168,7 @@ For testing purposes use these credentials:\
    }
   ```
  <a name="message-details"></a> 
- ### Message Details
+ ### Message Details:
   url: https://short-msg-api.herokuapp.com/view_msg/{id} \
   request: GET\
   no authentication needed\
