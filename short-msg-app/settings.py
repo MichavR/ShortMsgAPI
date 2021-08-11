@@ -77,7 +77,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'DaftcodeRemoteTask.wsgi.application'
+WSGI_APPLICATION = 'short-msg-app.wsgi.application'
 
 
 # Database
