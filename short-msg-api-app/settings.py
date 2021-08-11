@@ -58,7 +58,7 @@ MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
-ROOT_URLCONF = 'DaftcodeRemoteTask.urls'
+ROOT_URLCONF = 'short-msg-api-app.urls'
 
 TEMPLATES = [
     {
@@ -77,7 +77,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'short-msg-app.wsgi.application'
+WSGI_APPLICATION = 'short-msg-api-app.wsgi.application'
 
 
 # Database
